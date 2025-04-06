@@ -22,9 +22,16 @@ body{
     border-radius: 20px;
     padding: 40px 35px;
     margin: 100px auto 0;
+    margin-bottom: 3rem;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.5);
 }
+.card {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    margin-bottom: 2rem;
+  }
+  
 .search{
     width: 100%;
     display: flex;
@@ -40,7 +47,7 @@ body{
     border: 0;
     outline: 0;
     background-color: #ebfffc;
-    color: #3e3e3e;
+    color: #3c3b3b;
     padding: 10px 20px;
     height: 60px;
     border-radius: 30px;
@@ -50,8 +57,9 @@ body{
     
 }
 .search button {
-    border: 0;
-    outline: 0;
+    border: none;
+    outline: none;
+    padding: 12px;
     background-color: #ebfffc;
     border-radius: 50%;
     width: 60px;
@@ -68,6 +76,32 @@ body{
     background-color: #d4f7f0;
     transition: 0.3s;
 }
+
+
+.suggestions-list {
+    list-style: none;
+    margin: 5px 0 0;
+    padding: 0;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    position: absolute;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .suggestions-list li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .suggestions-list li:hover {
+    background-color: #ebfffc;
+  }
+  
 
 
 .weather-icon{
